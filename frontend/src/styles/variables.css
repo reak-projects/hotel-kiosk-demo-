@@ -1,0 +1,143 @@
+/* ============================================
+   Hotel Kiosk Design System — CSS Custom Properties
+   ============================================ */
+
+:root {
+  /* ── Luxury Background System ── */
+  --bg-deep: #0A0E1A;
+  --bg-surface: #0F1628;
+  --bg-elevated: #141D35;
+  --bg-glass: rgba(255, 255, 255, 0.04);
+
+  /* ── Metallic Gold System ── */
+  --gold-light: #F5D485;
+  --gold-mid: #C9A84C;
+  --gold-deep: #A6822A;
+  --gold-gradient: linear-gradient(135deg, #F5D485 0%, #C9A84C 50%, #8B6914 100%);
+
+  /* ── Text System ── */
+  --text-primary: #F0EDE8;
+  --text-secondary: #8A8A9A;
+  --text-gold: #C9A84C;
+
+  /* ── Border System ── */
+  --border-subtle: rgba(201, 168, 76, 0.15);
+  --border-glow: rgba(201, 168, 76, 0.4);
+
+  /* ── Compatibility Color Aliases ── */
+  --color-navy: var(--bg-surface);
+  --color-navy-light: #1a2540;
+  --color-navy-lighter: #223155;
+  --color-navy-dark: #080f1f;
+
+  --color-gold: var(--gold-mid);
+  --color-gold-light: var(--gold-light);
+  --color-gold-dark: var(--gold-deep);
+  --color-gold-subtle: rgba(201, 168, 76, 0.1);
+  --color-gold-hover: rgba(201, 168, 76, 0.16);
+
+  --color-white: #FFFFFF;
+  --color-gray-50: #0b1222;
+  --color-gray-100: #111a2e;
+  --color-gray-200: #1a2640;
+  --color-gray-300: #2f3f62;
+  --color-gray-400: #7f8aa6;
+  --color-gray-500: var(--text-secondary);
+  --color-gray-600: #b9bac5;
+  --color-gray-700: #c9ced8;
+  --color-gray-800: #e3dfd8;
+  --color-gray-900: var(--text-primary);
+
+  /* ── Semantic Colors ── */
+  --color-success: #10B981;
+  --color-success-light: rgba(16, 185, 129, 0.2);
+  --color-success-dark: #059669;
+  --color-error: #EF4444;
+  --color-error-light: rgba(239, 68, 68, 0.2);
+  --color-error-dark: #DC2626;
+  --color-warning: #F59E0B;
+  --color-warning-light: rgba(245, 158, 11, 0.2);
+  --color-info: #3B82F6;
+  --color-info-light: rgba(59, 130, 246, 0.2);
+
+  /* ── Typography ── */
+  --font-family-display: 'Cormorant Garamond', serif;
+  --font-family: 'Inter', 'Avenir Next', 'Segoe UI', sans-serif;
+  --font-size-xs: 0.75rem;    /* 12px */
+  --font-size-sm: 0.875rem;   /* 14px */
+  --font-size-base: 1rem;     /* 16px */
+  --font-size-lg: 1.125rem;   /* 18px */
+  --font-size-xl: 1.25rem;    /* 20px */
+  --font-size-2xl: 1.5rem;    /* 24px */
+  --font-size-3xl: 1.875rem;  /* 30px */
+  --font-size-4xl: 2.25rem;   /* 36px */
+  --font-size-5xl: 3rem;      /* 48px */
+
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --line-height-tight: 1.25;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.75;
+
+  /* ── Spacing ── */
+  --spacing-1: 0.25rem;   /* 4px */
+  --spacing-2: 0.5rem;    /* 8px */
+  --spacing-3: 0.75rem;   /* 12px */
+  --spacing-4: 1rem;      /* 16px */
+  --spacing-5: 1.25rem;   /* 20px */
+  --spacing-6: 1.5rem;    /* 24px */
+  --spacing-8: 2rem;      /* 32px */
+  --spacing-10: 2.5rem;   /* 40px */
+  --spacing-12: 3rem;     /* 48px */
+  --spacing-16: 4rem;     /* 64px */
+  --spacing-20: 5rem;     /* 80px */
+
+  /* ── Touch Targets ── */
+  --touch-min-height: 56px;
+  --touch-min-width: 56px;
+
+  /* ── Border Radius ── */
+  --radius-sm: 0.375rem;   /* 6px */
+  --radius-md: 0.5rem;     /* 8px */
+  --radius-lg: 0.75rem;    /* 12px */
+  --radius-xl: 1rem;       /* 16px */
+  --radius-2xl: 1.5rem;    /* 24px */
+  --radius-full: 9999px;
+
+  /* ── Shadows ── */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  --shadow-gold: 0 8px 28px 0 rgba(201, 168, 76, 0.2);
+
+  /* ── Transitions ── */
+  --transition-fast: 150ms ease;
+  --transition-normal: 250ms ease;
+  --transition-slow: 350ms ease;
+  --transition-page: 400ms ease-in-out;
+
+  /* ── Z-Index Scale ── */
+  --z-base: 0;
+  --z-header: 100;
+  --z-modal: 200;
+  --z-overlay: 300;
+  --z-toast: 400;
+
+  /* ── Layout ── */
+  --header-height: 84px;
+  --hardware-bar-height: 36px;
+  --content-max-width: 1920px;
+  --kiosk-base-width: 1920;
+  --kiosk-base-height: 1080;
+  --kiosk-scale: 1;
+  --kiosk-offset-x: 0px;
+  --kiosk-offset-y: 0px;
+  --viewport-width: 100vw;
+  --viewport-height: 100vh;
+  --content-height: calc((var(--kiosk-base-height) * 1px) - var(--header-height) - var(--hardware-bar-height));
+}
